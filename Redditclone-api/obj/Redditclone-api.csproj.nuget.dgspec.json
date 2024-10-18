@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Neow\\Source\\Repos\\Redditclone\\css\\Redditclone-api\\Redditclone-api.csproj": {}
+    "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditclone-api\\Redditclone-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Neow\\Source\\Repos\\Redditclone\\css\\Redditclone-api\\Redditclone-api.csproj": {
+    "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditclone-api\\Redditclone-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Neow\\Source\\Repos\\Redditclone\\css\\Redditclone-api\\Redditclone-api.csproj",
+        "projectUniqueName": "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditclone-api\\Redditclone-api.csproj",
         "projectName": "Redditclone-api",
-        "projectPath": "C:\\Users\\Neow\\Source\\Repos\\Redditclone\\css\\Redditclone-api\\Redditclone-api.csproj",
+        "projectPath": "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditclone-api\\Redditclone-api.csproj",
         "packagesPath": "C:\\Users\\Neow\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditclone-api\\obj\\",
         "projectStyle": "PackageReference",

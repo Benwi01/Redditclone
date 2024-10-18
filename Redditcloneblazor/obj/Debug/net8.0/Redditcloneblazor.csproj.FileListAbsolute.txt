@@ -1030,6 +1030,14 @@ C:\Users\Benjamin\OneDrive\Skrivebord\Redditclone\Redditcloneblazor\obj\Debug\ne
 C:\Users\Benjamin\OneDrive\Skrivebord\Redditclone\Redditcloneblazor\obj\Debug\net8.0\refint\Redditcloneblazor.dll
 C:\Users\Benjamin\OneDrive\Skrivebord\Redditclone\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.pdb
 C:\Users\Benjamin\OneDrive\Skrivebord\Redditclone\Redditcloneblazor\obj\Debug\net8.0\ref\Redditcloneblazor.dll
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.csproj.AssemblyReference.cache
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.AssemblyInfoInputs.cache
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.AssemblyInfo.cs
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.csproj.CoreCompileInputs.cache
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.sourcelink.json
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\dotnet.js
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\dotnet.js.map
@@ -1069,6 +1077,8 @@ C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\ww
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Win32.Registry.wasm
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\mscorlib.wasm
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\netstandard.wasm
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\Redditcloneblazor.pdb
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\Redditcloneblazor.wasm
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.AppContext.wasm
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Buffers.wasm
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Collections.Concurrent.wasm
@@ -1320,6 +1330,7 @@ C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\ww
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Security.AccessControl.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Data.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Security.Cryptography.Csp.wasm.gz
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Runtime.Intrinsics.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Threading.ThreadPool.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\netstandard.wasm.gz
@@ -1382,6 +1393,7 @@ C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\ww
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Diagnostics.FileVersionInfo.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Collections.Specialized.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Data.DataSetExtensions.wasm.gz
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\Redditcloneblazor.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.ServiceModel.Web.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.AppContext.wasm.gz
@@ -1423,6 +1435,7 @@ C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\ww
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Components.WebAssembly.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Xml.XDocument.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.wasm.gz
+C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\Redditcloneblazor.pdb.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Runtime.Loader.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Runtime.CompilerServices.Unsafe.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.IO.Compression.FileSystem.wasm.gz
@@ -1432,12 +1445,6 @@ C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\ww
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Linq.Queryable.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\System.Net.Security.wasm.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\WindowsBase.wasm.gz
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\Redditcloneblazor.pdb
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\Redditcloneblazor.wasm
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json.gz
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\Redditcloneblazor.wasm.gz
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\wwwroot\_framework\Redditcloneblazor.pdb.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\Redditcloneblazor.staticwebassets.runtime.json
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\Redditcloneblazor.dll
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\Redditcloneblazor.pdb
@@ -1641,13 +1648,6 @@ C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\do
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\icudt_CJK.dat
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\icudt_EFIGS.dat
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\bin\Debug\net8.0\icudt_no_CJK.dat
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.csproj.AssemblyReference.cache
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.AssemblyInfoInputs.cache
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.AssemblyInfo.cs
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.csproj.CoreCompileInputs.cache
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.sourcelink.json
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Authorization.wasm
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.wasm
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.Forms.wasm
@@ -2057,8 +2057,8 @@ C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\co
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\compressed\qr5eey4pli.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\compressed\ysz7bq82om.gz
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\compressed\fveyapdap7.gz
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcl.01456C80.Up2Date
+C:\Users\Neow\Source\Repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcl.01456C80.Up2Date
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.dll
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\refint\Redditcloneblazor.dll
 C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\Redditcloneblazor.pdb
-C:\Users\Neow\source\repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\ref\Redditcloneblazor.dll
+C:\Users\Neow\Source\Repos\Redditclone\css\Redditcloneblazor\obj\Debug\net8.0\ref\Redditcloneblazor.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8AVIez0Ffw1WpSjqBZA0MqTFZBEhxu0Gs4HdZD74HlA98OmXruZE6e5FhOPuH8z7s2GUPymfesDoXcqc3c3MEw==",
+  "dgSpecHash": "3BeMeVJtNHE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Neow\\Source\\Repos\\Redditclone\\css\\Redditcloneblazor\\Redditcloneblazor.csproj",
+  "projectFilePath": "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditcloneblazor\\Redditcloneblazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Neow\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.8\\microsoft.aspnetcore.authorization.8.0.8.nupkg.sha512",
     "C:\\Users\\Neow\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.8\\microsoft.aspnetcore.components.8.0.8.nupkg.sha512",

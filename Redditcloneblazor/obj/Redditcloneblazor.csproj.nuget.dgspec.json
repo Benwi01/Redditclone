@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Neow\\Source\\Repos\\Redditclone\\css\\Redditcloneblazor\\Redditcloneblazor.csproj": {}
+    "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditcloneblazor\\Redditcloneblazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Neow\\Source\\Repos\\Redditclone\\css\\Redditcloneblazor\\Redditcloneblazor.csproj": {
+    "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditcloneblazor\\Redditcloneblazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Neow\\Source\\Repos\\Redditclone\\css\\Redditcloneblazor\\Redditcloneblazor.csproj",
+        "projectUniqueName": "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditcloneblazor\\Redditcloneblazor.csproj",
         "projectName": "Redditcloneblazor",
-        "projectPath": "C:\\Users\\Neow\\Source\\Repos\\Redditclone\\css\\Redditcloneblazor\\Redditcloneblazor.csproj",
+        "projectPath": "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditcloneblazor\\Redditcloneblazor.csproj",
         "packagesPath": "C:\\Users\\Neow\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Neow\\Source\\Repos\\Redditclone\\css\\Redditcloneblazor\\obj\\",
+        "outputPath": "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditcloneblazor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Neow\\AppData\\Roaming\\NuGet\\NuGet.Config",

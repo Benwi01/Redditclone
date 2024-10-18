@@ -2,72 +2,91 @@
 @inject PostService PostService
 @using Model;
 @using Service;
+
 @if (posts == null)
 {
     <p><em>Indlæser...</em></p>
 }
 else
 {
-    <ul class="post-list">
-        @foreach (var post in posts.OrderByDescending(p => p.CreatedAt)) // Sort posts by CreatedAt descending
-        {
-            <li class="post-item">
-                <div class="post-header">
-                    <img src="/avatar.png" alt="Avatar" class="avatar" />
-                    <div class="post-title">
-                        <strong>@post.Title</strong> af @post.Author
+    @if (selectedPost == null)
+    {
+        <ul class="post-list">
+            @foreach (var post in posts.OrderByDescending(p => p.CreatedAt)) // Sort posts by CreatedAt descending
+            {
+                <li class="post-item" @onclick="() => SelectPost(post)">
+                    <div class="post-header">
+                        <img src="/avatar.png" alt="Avatar" class="avatar" />
+                        <div class="post-title">
+                            <strong>@post.Title</strong> af @post.Author
+                        </div>
                     </div>
-                </div>
-                <div class="post-content">
-                    <p>@post.Content</p> <!-- This line displays the content of the post -->
-                </div>
-                <div class="post-votes">
-                    <p>Upvotes: @post.Upvotes | Downvotes: @post.Downvotes</p>
-                    <button @onclick="() => UpvotePost(post.Id)">Upvote</button>
-                    <button @onclick="() => DownvotePost(post.Id)">Downvote</button>
-                </div>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <div class="post-item">
+            <button @onclick="DeselectPost">Tilbage</button> <!-- Button to go back to all posts -->
 
-                <h4>Kommentarer:</h4>
-                <ul class="comment-list">
-                    @if (post.Comments.Count == 0)
-                    {
-                        <li>No comments yet.</li>
-                    }
-                    else
-                    {
-                        foreach (var comment in post.Comments)
-                        {
-                            <li class="comment-item">
-                                <p>@comment.Text</p>
-                                <p>Forfatter: @comment.Author | Stemmer: @comment.Upvotes - @comment.Downvotes</p>
-                                <button @onclick="() => UpvoteComment(post.Id, comment.Id)">Upvote Kommentar</button>
-                                <button @onclick="() => DownvoteComment(post.Id, comment.Id)">Downvote Kommentar</button>
-                            </li>
-                        }
-                    }
-                </ul>
+            <div class="post-header">
+                <img src="/avatar.png" alt="Avatar" class="avatar" />
+                <div class="post-title">
+                    <strong>@selectedPost.Title</strong> af @selectedPost.Author
+                </div>
+            </div>
 
-                <h5>Tilføj en kommentar:</h5>
-                <EditForm Model="newComments[post.Id]" OnValidSubmit="() => AddComment(post.Id)">
-                    <DataAnnotationsValidator />
-                    <ValidationSummary />
-                    <div>
-                      
-                        <InputTextArea @bind-Value="newComments[post.Id].Text" />
-                    </div>
-                    <div>
-                        <label>Forfatter:</label>
-                        <InputText @bind-Value="newComments[post.Id].Author" />
-                    </div>
-                    <button type="submit">Tilføj Kommentar</button>
-                </EditForm>
-            </li>
-        }
-    </ul>
+            <div class="post-content">
+                <p>@selectedPost.Content</p>
+            </div>
+
+            <div class="post-votes">
+                <p>Upvotes: @selectedPost.Upvotes | Downvotes: @selectedPost.Downvotes</p>
+                <button @onclick="() => UpvotePost(selectedPost.Id)">Upvote</button>
+                <button @onclick="() => DownvotePost(selectedPost.Id)">Downvote</button>
+            </div>
+
+            <h4>Kommentarer:</h4>
+            <ul class="comment-list">
+                @if (selectedPost.Comments.Count == 0)
+                {
+                    <li>No comments yet.</li>
+                }
+                else
+                {
+                    foreach (var comment in selectedPost.Comments)
+                    {
+                        <li class="comment-item">
+                            <p>@comment.Text</p>
+                            <p>Forfatter: @comment.Author | Stemmer: @comment.Upvotes - @comment.Downvotes</p>
+                            <button @onclick="() => UpvoteComment(selectedPost.Id, comment.Id)">Upvote Kommentar</button>
+                            <button @onclick="() => DownvoteComment(selectedPost.Id, comment.Id)">Downvote Kommentar</button>
+                        </li>
+                    }
+                }
+            </ul>
+
+            <h5>Tilføj en kommentar:</h5>
+            <EditForm Model="newComments[selectedPost.Id]" OnValidSubmit="() => AddComment(selectedPost.Id)">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+                <div>
+                    <InputTextArea @bind-Value="newComments[selectedPost.Id].Text" />
+                </div>
+                <div>
+                    <label>Forfatter:</label>
+                    <InputText @bind-Value="newComments[selectedPost.Id].Author" />
+                </div>
+                <button type="submit">Tilføj Kommentar</button>
+            </EditForm>
+        </div>
+    }
 }
 
 @code {
     private List<Post>? posts;
+    private Post? selectedPost; // Store the selected post here
     private Dictionary<int, Comment> newComments = new();
 
     protected override async Task OnInitializedAsync()
@@ -82,6 +101,16 @@ else
         {
             newComments[post.Id] = new Comment(); // Initialize a new Comment for each post
         }
+    }
+
+    private void SelectPost(Post post)
+    {
+        selectedPost = post;
+    }
+
+    private void DeselectPost()
+    {
+        selectedPost = null;
     }
 
     // Upvote Post
@@ -133,11 +162,10 @@ else
     // Add Comment
     private async Task AddComment(int postId)
     {
-        var newComment = newComments[postId]; // Use the new comment for the specific post
+        var newComment = newComments[postId];
         newComment.PostId = postId;
         await PostService.AddCommentAsync(postId, newComment);
 
-        // Find post and add the new comment to the list
         var post = posts.FirstOrDefault(p => p.Id == postId);
         if (post != null)
         {
@@ -150,56 +178,60 @@ else
                 });
         }
 
-        // Reset new comment
         newComments[postId] = new Comment();
     }
 }
 
-
-
 <style>
     .post-list {
-        list-style-type: none; /* Remove bullet points */
+        list-style-type: none;
         padding: 0;
     }
 
     .post-item {
-        border: 1px solid #ccc; /* Light border for posts */
-        border-radius: 5px; /* Rounded corners */
-        padding: 10px; /* Padding around content */
-        margin-bottom: 15px; /* Spacing between posts */
-        background-color: #f9f9f9; /* Light background color */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: #f9f9f9;
+        transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
     }
 
+        .post-item:hover {
+            background-color: #e0e0e0; /* Change background color on hover */
+            cursor: pointer; /* Change cursor to pointer when hovering */
+        }
+
     .post-header {
-        font-size: 1.2em; /* Larger font for title */
-        margin-bottom: 5px; /* Spacing below title */
+        font-size: 1.2em;
+        margin-bottom: 5px;
     }
 
     .post-votes {
-        margin-bottom: 10px; /* Space below vote buttons */
+        margin-bottom: 10px;
     }
 
     .comment-list {
-        list-style-type: none; /* Remove bullet points for comments */
+        list-style-type: none;
         padding: 0;
-        margin: 10px 0; /* Margin around the comment list */
+        margin: 10px 0;
     }
 
     .comment-item {
-        border-top: 1px solid #eee; /* Divider between comments */
-        padding: 5px 0; /* Padding for comments */
+        border-top: 1px solid #eee;
+        padding: 5px 0;
     }
 
     h4 {
-        margin-top: 10px; /* Space before comments section */
+        margin-top: 10px;
     }
 
     h5 {
-        margin-top: 15px; /* Space before add comment section */
+        margin-top: 15px;
     }
 
     button {
-        margin-right: 5px; /* Space between buttons */
+        margin-right: 5px;
     }
 </style>
+
