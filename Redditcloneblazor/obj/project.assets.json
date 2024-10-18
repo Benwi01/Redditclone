@@ -2059,24 +2059,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Levi'\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Neow\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj",
+      "projectUniqueName": "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditcloneblazor\\Redditcloneblazor.csproj",
       "projectName": "Redditcloneblazor",
-      "projectPath": "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj",
-      "packagesPath": "C:\\Users\\Levi'\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\obj\\",
+      "projectPath": "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditcloneblazor\\Redditcloneblazor.csproj",
+      "packagesPath": "C:\\Users\\Neow\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Neow\\source\\repos\\Redditclone\\css\\Redditcloneblazor\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Levi'\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Neow\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2084,7 +2079,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2146,7 +2140,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

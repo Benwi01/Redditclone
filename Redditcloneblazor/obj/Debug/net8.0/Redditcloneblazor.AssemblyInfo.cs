@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Redditcloneblazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f4e614d26276c52278531d80066ea7d7f242413")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fea2eae6209eeee69f9cf9bfd80c7151ce4aa747")]
 [assembly: System.Reflection.AssemblyProductAttribute("Redditcloneblazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Redditcloneblazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

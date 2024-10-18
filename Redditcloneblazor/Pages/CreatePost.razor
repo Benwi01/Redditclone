@@ -30,7 +30,8 @@
 
     private async Task HandleValidSubmit()
     {
+        newPost.CreatedAt = DateTime.UtcNow; // Set CreatedAt to current date and time
         await PostService.CreatePostAsync(newPost);
-        Navigation.NavigateTo("/posts");
+        Navigation.NavigateTo("/"); // Redirect to posts page after creation
     }
 }

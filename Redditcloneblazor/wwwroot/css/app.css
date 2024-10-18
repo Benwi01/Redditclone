@@ -101,3 +101,15 @@ a, .btn-link {
 code {
     color: #c02d76;
 }
+
+.post-header {
+    display: flex;
+    align-items: center; /* Aligns items in the center vertically */
+}
+
+.avatar {
+    width: 70px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 2px; /* Space between avatar and title */
+}
