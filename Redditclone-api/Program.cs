@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
-using Model;
+using shared.Model;
 using Data;
 using System.Xml.Linq;
 

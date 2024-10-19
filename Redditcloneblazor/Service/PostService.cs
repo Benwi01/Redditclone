@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Json;
 using System.Xml.Linq;
-using Model;
+using shared.Model;
 using Redditcloneblazor.Pages;
 
 namespace Service

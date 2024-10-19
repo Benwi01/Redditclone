@@ -1,12 +1,12 @@
 {
   "mainAssemblyName": "Redditcloneblazor",
   "resources": {
-    "hash": "sha256-x3414Coyd43th+7tiK9VXlctti83t+sh6/fqgniTy18=",
+    "hash": "sha256-2KvSYbnNktnKVvcJADqq9Wf16I66NSENsiObNe2Lm7g=",
     "jsModuleNative": {
-      "dotnet.native.8.0.8.93i67mqfmb.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
+      "dotnet.native.8.0.8.dkjky7lq7b.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.8.80cvijctdx.js": "sha256-0Dpj/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU="
+      "dotnet.runtime.8.0.8.5sk8e24tvh.js": "sha256-0Dpj/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU="
     },
     "wasmNative": {
       "dotnet.native.wasm": "sha256-OcUTcd7qQceenWEF93409WZcaXp2qQbEyhdchog4RUE="
@@ -208,10 +208,12 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "Redditcloneblazor.wasm": "sha256-paQ25Y3255/IJyHD5pnNY1ltcY8msP+D8we/dJpI4d8="
+      "shared.wasm": "sha256-QlEuVgs7RILRqw8GDwcxR37G9z9EbWyfJwKXzwDfCmU=",
+      "Redditcloneblazor.wasm": "sha256-5kL6rjjRG1dXr84IB7u4H8TfiPbWvgshPspNO5Q3bdo="
     },
     "pdb": {
-      "Redditcloneblazor.pdb": "sha256-vx+9rK8wzqKw4Q9J3glZ8PjW8+tTvG2xikW+5gVWkgc="
+      "shared.pdb": "sha256-F6V4KdSk2t321ptBRlxce1fQi88KdXIOTHIUIsrBUHw=",
+      "Redditcloneblazor.pdb": "sha256-VKIj4mE/WTj7AG5aIjq4F0br8WwdwE/X9w+zPb2N4QY="
     }
   },
   "cacheBootResources": true,
