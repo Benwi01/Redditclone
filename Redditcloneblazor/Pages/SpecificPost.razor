@@ -1,0 +1,124 @@
+﻿@page "/post/{postId:int}"
+@inject PostService PostService
+@using shared.Model;
+@using Service;
+
+<h3>@post?.Title</h3>
+
+@if (post == null)
+{
+    <p>Indlæser...</p>
+}
+else
+{
+    <div class="post-content">
+        <p>@post.Content</p>
+        <p>Forfatter: @post.Author</p>
+        <p>Upvotes: @post.Upvotes | Downvotes: @post.Downvotes</p>
+    </div>
+
+    <h4>Kommentarer:</h4>
+    <ul class="comment-list">
+        @if (post.Comments.Count == 0)
+        {
+            <li>No comments yet.</li>
+        }
+        else
+        {
+            foreach (var comment in post.Comments)
+            {
+                <li class="comment-item">
+                    <p>@comment.Text</p>
+                    <p>Forfatter: @comment.Author | Stemmer: @comment.Upvotes - @comment.Downvotes</p>
+                </li>
+            }
+        }
+    </ul>
+
+    <h5>Tilføj en kommentar:</h5>
+    <EditForm Model="newComment" OnValidSubmit="AddComment">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div>
+            <InputTextArea @bind-Value="newComment.Text" />
+        </div>
+        <div>
+            <label>Forfatter:</label>
+            <InputText @bind-Value="newComment.Author" />
+        </div>
+        <button type="submit">Tilføj Kommentar</button>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public int postId { get; set; }
+
+    private Post? post;
+    private Comment newComment = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        post = await PostService.GetPostByIdAsync(postId);
+    }
+
+    private async Task AddComment()
+    {
+        newComment.PostId = postId;
+        await PostService.AddCommentAsync(postId, newComment);
+        post?.Comments.Add(new Comment
+            {
+                Text = newComment.Text,
+                Author = newComment.Author,
+                Upvotes = 0,
+                Downvotes = 0
+            });
+        newComment = new Comment();
+    }
+}
+
+<style>
+    .post-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .post-item {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: #f9f9f9;
+        transition: background-color 0.3s ease;
+    }
+
+        /* Hover effect for posts */
+        .post-item:hover {
+            background-color: #e0e0e0;
+            cursor: pointer;
+        }
+
+        /* Remove hover effect for the selected post */
+        .post-item.selected-post:hover {
+            background-color: #f9f9f9;
+            cursor: default; /* No hover cursor change */
+        }
+
+    /* Style for the selected post */
+    .selected-post {
+        background-color: #d0d0d0; /* Change background color to indicate selection */
+    }
+
+    .post-header {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+
+    .post-votes {
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-right: 5px;
+    }
+</style>

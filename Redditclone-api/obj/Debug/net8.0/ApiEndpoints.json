@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Model.Post, Redditclone-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[shared.Model.Post, shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -27,7 +27,7 @@
     "Parameters": [
       {
         "Name": "post",
-        "Type": "Model.Post",
+        "Type": "shared.Model.Post",
         "IsRequired": true
       }
     ],
@@ -55,7 +55,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Model.Post",
+        "Type": "shared.Model.Post",
         "MediaTypes": [
           "application/json"
         ],
@@ -100,7 +100,7 @@
       },
       {
         "Name": "comment",
-        "Type": "Model.Comment",
+        "Type": "shared.Model.Comment",
         "IsRequired": true
       }
     ],

@@ -1,7 +1,7 @@
 ﻿@page "/create-post"
 @inject PostService PostService
 @inject NavigationManager Navigation
-@using Model;
+@using shared.Model;
 @using Service;
 
 <h3>Opret Ny Tråd</h3>
@@ -30,7 +30,8 @@
 
     private async Task HandleValidSubmit()
     {
+        newPost.CreatedAt = DateTime.UtcNow; // Set CreatedAt to current date and time
         await PostService.CreatePostAsync(newPost);
-        Navigation.NavigateTo("/posts");
+        Navigation.NavigateTo("/"); // Redirect to posts page after creation
     }
 }
